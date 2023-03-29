@@ -15,3 +15,25 @@ Trowable을 상속받는 클래쓰는 Error아 Exception이 있다. Error는 시
 Exception은 수많은 자식클래스를 가지고있다. 그 중 RuntimeException을 주목해야 한다. RuntimeException은 CheckdException과 UnchekedException을 구분하는 기준이다. Exception의 자식 클래스 중 RuntimeException을 제외한 모든 클래스는 CheckedException이며, RuntimeException과 자식 클래스들을 Uncheked Exception 이라 부른다. 
 
 ### 3. 
+
+
+
+
+
+​Error와 Exception의 차이는 개발자가 프로그램 내에서 처리할 수 있는지에 대한 여부이다. Exception은 Error와 다르게 프로그램 내에서 처리해 줄 수 있다.
+
+​즉, 예외가 발생하더라도 프로그램을 비정상 종료시키지 않는다.
+
+​
+
+​Exception은 RuntimeException과 OtherException으로 나뉜다. 이들을 구분하는 차이는 컴파일러가 예외 처리를 하는지에 대한 여부이다.
+
+​RuntimeException은 Error와 함께 컴파일러가 예외를 체크하지 않는다. 이들을 비체크 예외(UnChecked Exceptions)라고 부른다.
+
+​반대로 OtherException은 Error와 RuntimeException을 제외한 모든 예외를 의미하며 컴파일러가 예외를 체크해 준다. 이는 체크 예외(Checked Exception)라고 부른다.
+
+![image](https://user-images.githubusercontent.com/128464859/228690971-68071c07-dbb5-4666-aa2a-2c8867113636.png)
+
+ 
+
+RuntimeException은 주로 프로그래밍 버그나 논리 오류에서 기인한다. 예를 들어 Null 상태인 객체에 접근할 때 발생하는 NullPointerException 같은 것을 말한다.
