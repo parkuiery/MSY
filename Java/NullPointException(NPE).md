@@ -17,7 +17,7 @@
 
 ### NullpointException을 피하는 방법
 1. 문자열 비교: String 변수와 리티럴문자를 비교할 때 다음과 같은 오류가 발생할 수 있음
-````
+```java
 String ptr = null;
 
 if (ptr.equal("abc") // NullPointerException 발생!
@@ -35,9 +35,9 @@ else
 System.out.println("NOT SAME!");
 
 }
-````
+```
 다음과 같이 null객체 대신 리터럴문자에서 equal 메소드를 호출함으로써 해결할수 있다.
-````
+```java
 String ptr = null;
 
 if ("abc".equals(ptr))
@@ -55,9 +55,10 @@ else
 System.out.println("NOT SAME!"); // "NOT SAME" 출력
 
 }
-````
+```
+
 2.tty-catch문 사용: 다음과 같이 예외처리문을 사용가능합니다.
-````
+```java
 public static void main(String[] arg) {
 
 String s = null; 
@@ -97,9 +98,10 @@ return s.length();
 } 
 
 }
-````
+```
+
 3.삼항 연산자 사용: null값은 ==또는 !=의 연산자가 적용한다.
-````
+```java
 public class Main {
 
 	public static void main(String[] arg) {
@@ -111,9 +113,9 @@ public class Main {
         } 
 
 }
-````
+```
 수정
-````
+```java
 public class Main {
 
 	public static void main(String[] arg) {
@@ -125,4 +127,4 @@ public class Main {
         } 
 
 }
-````
+```
