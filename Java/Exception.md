@@ -106,7 +106,7 @@ public static void doSomething() throws Exception {
 	throw new Exception();
 }
 ```
-doSomething() 메서드에서 예외가 발생 시 다음과 같이 동작한다.
+doSomething() 메서드에서 예외가 발생 시 다음과 같이 동작한다
 
 ![image](https://user-images.githubusercontent.com/128464859/228810153-0f4f426e-3ea9-4202-98e3-885ced8a37ef.png)
 
